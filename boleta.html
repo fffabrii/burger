@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boleta</title>
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title {
+  display: inline-block;
+  width: 200px;
+}
+</style>
+</head>
+<body>
+
+<main>
+<h1>BOLETA 🤑</h1>
+<span class="title">ID Pedido:</span>
+<span id="ped"></span><br/>
+<br/>
+<span class="title">Nombre cliente:</span>
+<span id="name"></span><br/>
+<br/>
+<span class="title">Celular:</span>
+<span id="celu"></span><br/>
+<br/>
+<span class="title">Fecha de pedido:</span>
+<span id="date"></span><br/>
+<br/>
+<span class="title">Cantidad:</span>
+<span id="canti"></span>
+
+<br/><br/><hr/>
+</main>
+<br/>
+
+<span class="title">Tamaño:</span>
+<span id="tamaño"></span><br/><br/>
+<span class="title">Tipo:</span>
+<span id="tipo"></span><br/><br/>
+<span class="title">Cremas:</span>
+<span id="cremas"></span><br/><br/>
+<span class="title">Forma de pago:</span>
+<span id="pago"></span><br/><br/>
+
+<script>
+
+var get_tam = localStorage.getItem('tamaño')
+var get_tipo = localStorage.getItem('tipo')
+var get_cremas = localStorage.getItem('cremas')
+var get_pago = localStorage.getItem('pago')
+var get_ped = localStorage.getItem('ped')
+var get_client = localStorage.getItem('client')
+var get_cel = localStorage.getItem('cel')
+var get_fecha = localStorage.getItem('fecha')
+var get_cant = localStorage.getItem('cant')
+
+var ped = document.getElementById('ped').innerHTML = get_ped
+var name = document.getElementById('name').innerHTML = get_client
+var celu = document.getElementById('celu').innerHTML = get_cel
+var dat = document.getElementById('date').innerHTML = get_fecha
+var canti = document.getElementById('canti').innerHTML = get_cant
+
+var tamaño = document.getElementById('tamaño').innerHTML = get_tam
+var tip = document.getElementById('tipo').innerHTML = get_tipo
+var cremas = document.getElementById('cremas').innerHTML = get_cremas
+var pago = document.getElementById('pago').innerHTML = get_pago
+
+
+
+</script>
+</body>
+</html>

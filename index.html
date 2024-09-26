@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://i.redd.it/h03b7gzgh0na1.jpg" type="image/">
+  <link rel="stylesheet" href="style.css">
+  <title>Burger</title>
+</head>
+<body>
+
+<div class="title">
+<h1>Burger</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNPEM8OEMmMciOP8kuGPcfUTtqq2gLJC6g4w&s" alt="">
+</div>
+
+<main>
+  <div class="box">
+    <div class="boxx">
+      <span>ID Pedido:</span>
+      <input type="text" id="pedido">
+      <span>Nombre Cliente:</span>
+      <input type="text" id="cliente">
+      <span>Celular:</span>
+      <input type="text" id="celular">
+    </div>
+
+    <br/>
+
+    <div class="boxx">
+      <span>Fecha de pedido:</span>
+      <input type="text" id="f_pedido" disabled>
+      <span>Cantidad:</span>
+      <input type="text" id="cantidad">
+    </div>
+
+    <br/>
+
+    <div class="size">
+      <span>Tamaño</span>
+      <select name="size" id="size">
+        <option value="" hidden>Tamaño</option>
+        <option value="Pequeña">Pequeña</option>
+        <option value="Mediana">Mediana</option>
+        <option value="Grande">Grande</option>
+        <option value="Extra Grande">Extra Grande 🥵</option>
+      </select>
+    </div>
+
+    <div class="opt">
+      <span>Tipo</span>
+      <select name="size" id="tipo">
+        <option value="" hidden>Tipo</option>
+        <option value="Carne">Carne</option>
+        <option value="Pollo">Pollo</option>
+        <option value="Bistec">Bistec</option>
+      </select>
+    </div>
+
+    <div class="opt">
+      <span>Cremas</span>
+      <select name="size" id="cremas">
+        <option value="" hidden>Cremas</option>
+        <option value="Mayonesa">Mayonesa</option>
+        <option value="Ketchup">Ketchup</option>
+        <option value="Mostaza">Mostaza</option>
+        <option value="Ocopa">Ocopa</option>
+        <option value="Aji">Ají</option>
+      </select>
+    </div>
+
+    <br/>
+
+    <div class="size">
+      <span>Forma de pago</span>
+      <select name="size" id="pago">
+        <option value="" hidden>Forma de pago</option>
+        <option value="yape">Yape</option>
+        <option value="plin">Plin</option>
+        <option value="tarjeta Grande">Tarjeta</option>
+        <option value="efectivo">Efectivo</option>
+      </select>
+    </div>
+
+    <br/><br/><br/>
+
+    <button onclick="register()">Agregar</button><br/>
+
+    <div id="link"></div>
+  </div>
+</main>
+
+
+<script src="main.js"></script>
+</body>
+</html>

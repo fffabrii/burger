@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://i.redd.it/h03b7gzgh0na1.jpg" type="image/">
-  <link rel="stylesheet" href="style.css">
-  <title>Burger</title>
+<meta charset="UTF-8">
+<link rel="icon" href="https://i.redd.it/h03b7gzgh0na1.jpg" type="image/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo 5 | LP II</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body { font-family: "Ubuntu Mono", monospace; }
+.dib {
+  font-size: 10px;
+  font-weight: bold;
+}
+a { text-decoration: none; color: black; }
+a:hover { background-color: brown; }
+.nav { display: flex; gap: 15px; justify-content: center; align-items: center; }
+.user { display: flex; gap: 15px; justify-content: center; align-items: center; color: brown; font-weight: bold; }
+img { max-width: 100%; width: 200px; height: 200px; }
+</style>
 </head>
 <body>
+<center>
+<pre class="dib">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣤⣶⣤⣤⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⡿⠋⠉⠛⠛⠛⠿⣿⠿⠿⢿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⡀⢀⣽⣷⣆⡀⠙⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣷⠶⠋⠀⠀⣠⣤⣤⣉⣉⣿⠙⣿⠀⢸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⠁⠀⠀⠴⡟⣻⣿⣿⣿⣿⣿⣶⣿⣦⡀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⠟⡿⠻⣿⠃⠀⠀⠀⠻⢿⣿⣿⣿⣿⣿⠏⢹⣿⣿⣿⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣼⣷⡶⣿⣄⠀⠀⠀⠀⠀⢉⣿⣿⣿⡿⠀⠸⣿⣿⡿⣷⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡿⣦⢀⣿⣿⣄⡀⣀⣰⠾⠛⣻⣿⣿⣟⣶⡀⢸⡿⡟⠹⡆⠀⠄⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠞⣾⣿⡛⣿⣿⣿⣿⣱⣾⣿⣿⣿⣿⣿⣿⣿⣿⡇⢰⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⣿⡽⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⠿⣍⣿⣧⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣷⣮⣽⣿⣷⣙⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣹⡿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡧⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡆⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿⣾⣿⣿⣿⣿⣿⣿⡶⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⡴⠞⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠚⣿⣿⣿⠿⣿⣿⠿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢀⣠⣤⠶⠚⠉⠉⠀⢀⡴⠂⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⢀⣿⣿⠁⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠞⠋⠁⠀⠀⠀⠀⣠⣴⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⠀⣾⣿⠋⠀⢠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⡀⠀⠀⢀⣷⣶⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣆⣼⣿⠁⢠⠃⠈⠓⠦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⡛⠛⠿⠿⠿⠿⠿⢷⣦⣤⣤⣤⣦⣄⣀⣀⠀⢀⣿⣿⠻⣿⣰⠻⠀⠸⣧⡀⠀⠉⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠛⢿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠙⠛⠿⣦⣼⡏⢻⣿⣿⠇⠀⠁⠀⠻⣿⠙⣶⣄⠈⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⣐⠀⠀⠀⠈⠳⡘⣿⡟⣀⡠⠿⠶⠒⠟⠓⠀⠹⡄⢴⣬⣍⣑⠢⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢀⣀⠐⠲⠤⠁⢘⣠⣿⣷⣦⠀⠀⠀⠀⠀⠀⠙⢿⣿⣏⠉⠉⠂⠉⠉⠓⠒⠦⣄⡀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠈⣿⣿⣷⣯⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢦⣷⡀⠀⠀⠀⠀⠀⠀⠉⠲⣄⠀
+⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢦⠀⢹⣿⣏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢻⣷⣄⠀⠀⠀⠀⠀⠀⠈⠳
+⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⣸⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣽⡟⢶⣄⠀⠀⠀⠀⠀
+⠯⠀⠀⠀⠒⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡄⠈⠳⠀⠀⠀⠀
+⠀⠀⢀⣀⣀⡀⣼⣤⡟⣬⣿⣷⣤⣀⣄⣀⡀⠀⠀⠀⠀⠀⠀⠈⣿⣿⡄⣉⡀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⣿⣿⣄⠀⣀⣀⡀⠀
+</pre>
 
-<div class="title">
-<h1>Burger</h1>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNPEM8OEMmMciOP8kuGPcfUTtqq2gLJC6g4w&s" alt="">
+<pre>
+  ________                             .________
+ /  _____/______ __ ________   ____    |   ____/
+/   \  __\_  __ \  |  \____ \ /  _ \   |____  \ 
+\    \_\  \  | \/  |  /  |_> >  <_> )  /       \
+ \______  /__|  |____/|   __/ \____/  /______  /
+        \/            |__|                   \/ 
+</pre>
+
+<div class="nav">
+  <a href="sc">Diagrama/bizagis</a> | 
+  <a href="products">Registrar productos</a> | 
+  <a href="order">Registrar pedidos</a> | 
+  <a href="login">Registrar usuario</a> 
 </div>
+<br/>
+<br/>
+<!--
+<img src="https://i1.sndcdn.com/artworks-oaEyr98io8ChV1C6-n1QhYQ-t500x500.jpg">
+-->
+<img src="https://yt3.googleusercontent.com/ytc/AIdro_kNDFoFaFwXK65ZbvoHOnNRwEXJecJ940QkTOvAdSahxro=s900-c-k-c0x00ffffff-no-rj">
 
-<main>
-  <div class="box">
-    <div class="boxx">
-      <span>ID Pedido:</span>
-      <input type="text" id="pedido">
-      <span>Nombre Cliente:</span>
-      <input type="text" id="cliente">
-      <span>Celular:</span>
-      <input type="text" id="celular">
-    </div>
-
-    <br/>
-
-    <div class="boxx">
-      <span>Fecha de pedido:</span>
-      <input type="text" id="f_pedido" disabled>
-      <span>Cantidad:</span>
-      <input type="text" id="cantidad">
-    </div>
-
-    <br/>
-
-    <div class="size">
-      <span>Tamaño</span>
-      <select name="size" id="size">
-        <option value="" hidden>Tamaño</option>
-        <option value="Pequeña">Pequeña</option>
-        <option value="Mediana">Mediana</option>
-        <option value="Grande">Grande</option>
-        <option value="Extra Grande">Extra Grande 🥵</option>
-      </select>
-    </div>
-
-    <div class="opt">
-      <span>Tipo</span>
-      <select name="size" id="tipo">
-        <option value="" hidden>Tipo</option>
-        <option value="Carne">Carne</option>
-        <option value="Pollo">Pollo</option>
-        <option value="Bistec">Bistec</option>
-      </select>
-    </div>
-
-    <div class="opt">
-      <span>Cremas</span>
-      <select name="size" id="cremas">
-        <option value="" hidden>Cremas</option>
-        <option value="Mayonesa">Mayonesa</option>
-        <option value="Ketchup">Ketchup</option>
-        <option value="Mostaza">Mostaza</option>
-        <option value="Ocopa">Ocopa</option>
-        <option value="Aji">Ají</option>
-      </select>
-    </div>
-
-    <br/>
-
-    <div class="size">
-      <span>Forma de pago</span>
-      <select name="size" id="pago">
-        <option value="" hidden>Forma de pago</option>
-        <option value="yape">Yape</option>
-        <option value="plin">Plin</option>
-        <option value="tarjeta Grande">Tarjeta</option>
-        <option value="efectivo">Efectivo</option>
-      </select>
-    </div>
-
-    <br/><br/><br/>
-
-    <button onclick="register()">Agregar</button><br/>
-
-    <div id="link"></div>
-  </div>
-</main>
-
-
-<script src="main.js"></script>
+<br/><br/>
+<span>Integrantes:</span><br/><br/>
+<div class="user">
+<span class="inte">Miguel Yquiapaza</span> |
+<span class="inte">Fabrizio Urbina</span> |
+<span class="inte">Mauricio Sandoval</span> |
+<span class="inte">Jorge Sevillano</span>
+</div>
+</center>
 </body>
 </html>

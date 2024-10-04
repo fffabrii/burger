@@ -1,3 +1,13 @@
+const date = new Date();
+var d = date.getDate()
+var m = date.getMonth() + 1
+var y = date.getFullYear()
+
+var dat = `${d} / ${m} / ${y}`
+console.log(dat);
+
+var f_pedido = document.getElementById('f_pedido').value = dat
+localStorage.setItem('fecha', f_pedido)
 const size = document.getElementById('size');
 const tipo = document.getElementById('tipo');
 const cremas = document.getElementById('cremas');
@@ -27,20 +37,18 @@ pago.addEventListener('change', function() {
   console.log(select_pago)
 });
 
-
-const date = new Date();
-var d = date.getDate()
-var m = date.getMonth() + 1
-var y = date.getFullYear()
-
-var dat = `${d} / ${m} / ${y}`
-console.log(dat);
-
-var f_pedido = document.getElementById('f_pedido').value = dat
-localStorage.setItem('fecha', f_pedido)
+function vacio() {
+  document.getElementById('pedido').value = "" 
+  document.getElementById('cliente').value = ""
+  document.getElementById('celular').value = ""
+  document.getElementById('cantidad').value = ""
+  document.getElementById('size').value = ""
+  document.getElementById('tipo').value = ""
+  document.getElementById('cremas').value = ""
+  document.getElementById('pago').value = ""
+}
 
 function register() {
-
   let pedido = document.getElementById('pedido').value
   let cliente = document.getElementById('cliente').value
   let celular = document.getElementById('celular').value
@@ -50,6 +58,8 @@ function register() {
   localStorage.setItem('client', cliente)
   localStorage.setItem('cel', celular)
   localStorage.setItem('cant', cantidad)
+
+  vacio()
 
   if (pedido == "" | cliente == "" | celular == "" | f_pedido == "" | cantidad == "") {
     alert("complete los campos")

@@ -12,39 +12,52 @@ body {
   display: inline-block;
   width: 200px;
 }
+
+main {
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 100%;
+  width: 400px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+h1 { margin: 0; }
 </style>
 </head>
 <body>
 
+<button onclick="window.print()">Imprimir Boleta</button>
 <main>
-<h1>BOLETA 🤑</h1>
-<span class="title">ID Pedido:</span>
+<h1>🤑 BOLETA 🤑</h1><br/>
+<b class="title">ID Pedido:</b>
 <span id="ped"></span><br/>
 <br/>
-<span class="title">Nombre cliente:</span>
+<b class="title">Nombre cliente:</b>
 <span id="name"></span><br/>
 <br/>
-<span class="title">Celular:</span>
+<b class="title">Celular:</b>
 <span id="celu"></span><br/>
 <br/>
-<span class="title">Fecha de pedido:</span>
+<b class="title">Fecha de pedido:</b>
 <span id="date"></span><br/>
 <br/>
-<span class="title">Cantidad:</span>
+<b class="title">Cantidad:</b>
 <span id="canti"></span>
 
 <br/><br/><hr/>
-</main>
+
 <br/>
 
-<span class="title">Tamaño:</span>
+<b class="title">Tamaño:</b>
 <span id="tamaño"></span><br/><br/>
-<span class="title">Tipo:</span>
+<b class="title">Tipo:</b>
 <span id="tipo"></span><br/><br/>
-<span class="title">Cremas:</span>
+<b class="title">Cremas:</b>
 <span id="cremas"></span><br/><br/>
-<span class="title">Forma de pago:</span>
+<b class="title">Forma de pago:</b>
 <span id="pago"></span><br/><br/>
+</main>
 
 <script>
 
@@ -68,7 +81,6 @@ var tamaño = document.getElementById('tamaño').innerHTML = get_tam
 var tip = document.getElementById('tipo').innerHTML = get_tipo
 var cremas = document.getElementById('cremas').innerHTML = get_cremas
 var pago = document.getElementById('pago').innerHTML = get_pago
-
 
 
 </script>
